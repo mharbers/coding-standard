@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <ruleset name="Ecg">
     <description>Magento ECG Coding Standard</description>
-
+    
+    <rule ref="PSR2">
+        <exclude name="PSR1.Classes.ClassDeclaration"/>
+        <exclude name="Squiz.Classes.ValidClassName"/>
+    </rule>
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
     <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
